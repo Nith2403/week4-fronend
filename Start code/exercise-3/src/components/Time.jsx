@@ -2,7 +2,7 @@ function Time() {
     let date = new Date().toLocaleString() + ""
     return(
         <h2>
-            {date}
+            {date.slice(date.indexOf(",")+1)}
         </h2>
     );
 }
